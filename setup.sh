@@ -60,6 +60,11 @@ if [ -z "${WORKER_API_KEY:-}" ] && [ -z "${MOONSHOT_API_KEY:-}" ]; then
     echo "  export WORKER_BASE_URL=\"http://localhost:11434/v1\""
     echo "  export WORKER_MODEL=\"qwen2.5:32b\""
     echo ""
+    echo "  # OR LM Studio (local, free)"
+    echo "  export WORKER_API_KEY=\"lm-studio\""
+    echo "  export WORKER_BASE_URL=\"http://localhost:1234/v1\""
+    echo "  export WORKER_MODEL=\"google/gemma-4-12b-qat\""
+    echo ""
 else
     echo "  ✓ API key found"
 fi
